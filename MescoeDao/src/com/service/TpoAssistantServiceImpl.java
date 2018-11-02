@@ -25,20 +25,6 @@ public class TpoAssistantServiceImpl implements TpoAssistantService{
 		if(student.getHsc()<company.getHsc())
 			return false;
 		int flag=0;
-		
-		
-//		if(student.getSsc()>=company.getSsc())
-//			return true;
-//		if(student.getHsc()>=company.getHsc())
-//			return true;
-//		if(student.getBeaggregate()>=company.getBeaggregate())
-//			return true;
-//		if(student.getBacklog()>company.getBacklog())
-//			return false;
-//		
-//		int flag=0;
-		
-		
 		List<CompanyCriteria> companyCriteriaList = new CompanyCriteriaServiceImpl().getCompanyCriteriaService(company.getCid());
 		for(CompanyCriteria companyCriteria:companyCriteriaList)
 		{

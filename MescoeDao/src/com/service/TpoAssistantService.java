@@ -1,3 +1,15 @@
+//package com.service;
+//
+//import java.util.List;
+//
+//import com.model.Student;
+//
+//public interface TpoAssistantService {
+//	public boolean checkEligibilityOfStudentForCompany(int sid,int cid);
+//	public boolean checkEligibilityOfStudentForDreamStatus(int sid);
+//	
+//}
+
 package com.service;
 
 import java.util.List;
@@ -5,7 +17,14 @@ import java.util.List;
 import com.model.CompanyCriteria;
 import com.model.Student;
 
-public interface TpoAssistantService {
+
+/**
+ * Interface class that has the following methods
+ * @author Administrator
+ *
+ */
+public interface TpoAssistantService 
+{
 	public boolean checkEligibilityOfStudentForCompany(int sid,int cid);
 	public boolean checkEligibilityOfStudentForDreamStatus(int sid);
 	public List<Student>getStudentEligibleForDreamStatus();
@@ -17,3 +36,5 @@ public interface TpoAssistantService {
 	
 	public List<Student> getStudentEligibileForCompany(List<CompanyCriteria> companyCriteriaList);
 }
+
+
